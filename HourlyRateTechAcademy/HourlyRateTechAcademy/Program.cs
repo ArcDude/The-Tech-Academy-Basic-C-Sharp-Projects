@@ -27,9 +27,23 @@ namespace HourlyRateTechAcademy
             int worked2 = Convert.ToInt32(hoursWorked2);
             Console.WriteLine("Weekly salary of Person 1:");
             Console.WriteLine(hours1 * worked1);
+            float weekSal1 = (hours1 * worked1);
             Console.WriteLine("Weekly salary of Person 2:");
             Console.WriteLine(hours2 * worked2);
-            Console.WriteLine
+            float weekSal2 = (hours2 * worked2);
+            Console.ReadLine();
+            Console.WriteLine("Does Person 1 make more money than Person 2?");
+            Console.ReadLine();
+            bool moreCash = true;
+            moreCash = weekSal1 > weekSal2;
+            if(moreCash)
+            {
+                Console.WriteLine("Person 1 makes more than Person 2: " + moreCash);
+            }
+            else
+            {
+                Console.WriteLine("Person 1 makes more than Person 2: " + moreCash);
+            }
             Console.ReadLine();
         }
     }
