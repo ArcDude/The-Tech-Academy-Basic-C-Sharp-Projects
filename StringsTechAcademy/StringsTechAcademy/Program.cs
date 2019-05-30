@@ -22,6 +22,11 @@ namespace StringsTechAcademy
             Console.WriteLine(txt2);
             Console.WriteLine(txt3);
             Console.ReadLine();
+            StringBuilder sb = new StringBuilder("Title ", 50);
+            sb.Append("Body ");
+            sb.Append("End");
+            Console.WriteLine("{0} chars: {1}", sb.Length, sb.ToString());
+            Console.ReadLine();
         }
     }
 }
