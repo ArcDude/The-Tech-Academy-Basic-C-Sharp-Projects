@@ -47,7 +47,7 @@ namespace ForLoopTechAcademy
 
 
             List<string> loopStringList = new List<string>();
-            loopStringList.Add("this");
+            loopStringList.Add("This");
             loopStringList.Add("string");
             loopStringList.Add("is");
             loopStringList.Add("in");
@@ -55,7 +55,7 @@ namespace ForLoopTechAcademy
             loopStringList.Add("list");
             loopStringList.Add("of");
             loopStringList.Add("strings");
-            Console.WriteLine("Insert either: 'this', 'string', 'is', 'in', 'this', 'list', 'of', or 'strings' ");
+            Console.WriteLine("Insert either: 'This', 'string', 'is', 'in', 'this', 'list', 'of', or 'strings' ");
             string stringInput = (Console.ReadLine());
             int index1 = loopStringList.IndexOf("This");
             foreach (string loopString in loopStringList)
