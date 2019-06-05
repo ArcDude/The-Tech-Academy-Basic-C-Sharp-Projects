@@ -10,7 +10,7 @@ namespace IntegerMethodTechAcademy
     {
         static void Main(string[] args)
         {
-
+            Operation operation = new Operation();   
         }
     }
 }
