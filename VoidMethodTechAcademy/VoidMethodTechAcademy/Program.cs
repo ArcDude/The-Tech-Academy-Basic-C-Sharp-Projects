@@ -13,6 +13,7 @@ namespace VoidMethodTechAcademy
             VoidTech voidTech = new VoidTech();
             voidTech.Int1 = 4;
             voidTech.Int2 = 2;
+            Console.WriteLine("4 + 2 = " + voidTech.Int1 ++ voidTech.Int2);
             Console.WriteLine(voidTech.Int1 + " " + voidTech.Int2);
             Console.ReadLine();
         }
