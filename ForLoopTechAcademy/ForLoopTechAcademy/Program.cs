@@ -104,30 +104,30 @@ namespace ForLoopTechAcademy
             //Console.ReadLine();
 
             // Activity 11
-            List<string> loopStringList = new List<string>();
-            loopStringList.Add("this");
-            loopStringList.Add("string");
-            loopStringList.Add("is");
-            loopStringList.Add("in");
-            loopStringList.Add("this");
-            loopStringList.Add("list");
-            loopStringList.Add("of");
-            loopStringList.Add("strings");
-            Console.WriteLine("Insert either: 'this', 'string', 'is', 'in', 'this', 'list', 'of', or 'strings' ");
-            string stringInput = (Console.ReadLine());
-            foreach (string loopString in loopStringList)
-            {
-                if (loopStringList.Contains(stringInput))
-                {
-                    Console.WriteLine(loopStringList.IndexOf(stringInput));
+            //List<string> loopStringList = new List<string>();
+            //loopStringList.Add("this");
+            //loopStringList.Add("string");
+            //loopStringList.Add("is");
+            //loopStringList.Add("in");
+            //loopStringList.Add("this");
+            //loopStringList.Add("list");
+            //loopStringList.Add("of");
+            //loopStringList.Add("strings");
+            //Console.WriteLine("Insert either: 'this', 'string', 'is', 'in', 'this', 'list', 'of', or 'strings' ");
+            //string stringInput = (Console.ReadLine());
+            //foreach (string loopString in loopStringList)
+            //{
+            //    if (loopStringList.Contains(stringInput))
+            //    {
+            //        Console.WriteLine(loopStringList.IndexOf(stringInput));
 
-                }
-                else
-                {
-                    Console.WriteLine("You didn't enter a string that is in the list.");
-                }
-            }
-            Console.ReadLine();
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("You didn't enter a string that is in the list.");
+            //    }
+            //}
+            //Console.ReadLine();
         }
     }
 }
