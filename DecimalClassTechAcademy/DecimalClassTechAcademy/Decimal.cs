@@ -20,7 +20,7 @@ namespace DecimalClassTechAcademy
             Int2 = 6;
             int sum = Convert.ToInt32(Dec + Int2);
             Console.WriteLine(Dec + " added to " + Int2 + " equals " + sum + " converted back to an integer.");
-            Console.WriteLine("Enter a number in string format to be multiplied by three.");
+            Console.WriteLine("Enter a number to be multiplied by 3.");
             NumString = Console.ReadLine();
             try
             {
