@@ -40,16 +40,24 @@ namespace ForLoopTechAcademy
 
 
             // Activity 5
-            //string[] loopString = { "boop ", "bop " };
-            //for (int i = 0; i <= loopString.Length; i++)
-            //{
-            //    Console.WriteLine("Please enter something to add to the array.");
-            //    string userInput = Console.ReadLine();
-            //    Console.WriteLine(loopString[i]);
-            //    loopString[i] = loopString[i] + userInput;
-            //    Console.WriteLine(loopString[i]);
-            //}
-            //Console.ReadLine();
+            string[] loopString = { "boop ", "bop " };
+            for (int i = 0; i <= loopString.Length; i++)
+            {
+                Console.WriteLine("Please enter something to add to the array.");
+                string userInput = Console.ReadLine();
+                Array.Resize(ref loopString, loopString.Length + 1);
+                loopString[loopString.Length - 1] = " Hi ";
+                Console.WriteLine(loopString[i]);
+                loopString[i] = loopString[i] + userInput;
+                Console.WriteLine(loopString[i]);
+                if (i == 2)
+                {
+                    Console.WriteLine("Goodbye");
+                    Console.ReadLine();
+                    Environment.Exit(0);
+                }
+            }
+            Console.ReadLine();
 
             // Activity 6 - 8
             //List<string> loopStringList = new List<string>();
@@ -113,18 +121,20 @@ namespace ForLoopTechAcademy
             //loopStringList.Add("list");
             //loopStringList.Add("of");
             //loopStringList.Add("strings");
-            //Console.WriteLine("Insert either: 'this', 'string', 'is', 'in', 'this', 'list', 'of', or 'strings' ");
-            //string stringInput = (Console.ReadLine());
-            //foreach (string loopString in loopStringList)
+            //var dupe = loopStringList
+            //    .GroupBy(i => i)
+            //    .Where(g => g.Count() > 1)
+            //    .Select(g => g.Key);
+            //foreach (var d in dupe)
             //{
-            //    if (loopStringList.Contains(stringInput))
+            //    if (loopStringList.Count != loopStringList.Distinct().Count())
             //    {
-            //        Console.WriteLine(loopStringList.IndexOf(stringInput));
+            //        Console.WriteLine("The duplicate string in the list is: {0}", d);
 
             //    }
             //    else
             //    {
-            //        Console.WriteLine("You didn't enter a string that is in the list.");
+            //        Console.WriteLine("Something went wrong with the code!");
             //    }
             //}
             //Console.ReadLine();
