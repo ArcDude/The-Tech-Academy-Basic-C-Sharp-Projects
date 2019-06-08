@@ -8,35 +8,28 @@ namespace DecimalClassTechAcademy
 {
     public class Decimal
     {
-        public Decimal()
+        public int Opp(int num1)
         {
-            Console.WriteLine("Enter an integer to be divided by 2:");
-            Int1 = Convert.ToInt32(Console.ReadLine());
-            Int2 = 2;
-            int quotient = Int1 / Int2;
-            Console.WriteLine(Int1 + " divided by " + Int2 + " equals " + quotient);
-            Console.WriteLine("Enter a decimal to be added by 6:");
-            Dec = Convert.ToDecimal(Console.ReadLine());
-            Int2 = 6;
-            int sum = Convert.ToInt32(Dec + Int2);
-            Console.WriteLine(Dec + " added to " + Int2 + " equals " + sum + " converted back to an integer.");
-            Console.WriteLine("Enter a number to be multiplied by 3.");
-            NumString = Console.ReadLine();
-            try
-            {
-                int num1 = Int32.Parse(NumString);
-                Int2 = 3;
-                int product = num1 * Int2;
-                Console.WriteLine(num1 + " multiplied by " + Int2 + " equals " + product);
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Unable to convert {0} to an integer.", NumString);
-            }
+            num1 /= num1;
+            Console.WriteLine("The value divided by itself is: {0}", num1);
+            Console.ReadLine();
+            return num1;
         }
-        public int Int1 { get; set; }
-        public int Int2 { get; set; }
-        public decimal Dec { get; set; }
-        public string NumString { get; set; }
+
+        public double Opp(double dec1)
+        {
+            dec1 *= dec1;
+            int dec2 = Convert.ToInt32(dec1);
+            Console.WriteLine("The value squared after being converted back to an integer is: {0}", dec2);
+            Console.ReadLine();
+            return dec1;
+        }
+        public string Opp(string str1)
+        {
+            int str2 = Convert.ToInt32(str1);
+            str2 += str2;
+            Console.WriteLine("The value added by itself is: {0}", str2);
+            return str1;
+        }
     }
 }
