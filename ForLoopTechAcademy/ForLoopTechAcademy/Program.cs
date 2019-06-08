@@ -40,24 +40,24 @@ namespace ForLoopTechAcademy
 
 
             // Activity 5
-            string[] loopString = { "boop ", "bop " };
-            for (int i = 0; i <= loopString.Length; i++)
-            {
-                Console.WriteLine("Please enter something to add to the array.");
-                string userInput = Console.ReadLine();
-                Array.Resize(ref loopString, loopString.Length + 1);
-                loopString[loopString.Length - 1] = " Hi ";
-                Console.WriteLine(loopString[i]);
-                loopString[i] = loopString[i] + userInput;
-                Console.WriteLine(loopString[i]);
-                if (i == 2)
-                {
-                    Console.WriteLine("Goodbye");
-                    Console.ReadLine();
-                    Environment.Exit(0);
-                }
-            }
-            Console.ReadLine();
+            //string[] loopString = { "boop ", "bop " };
+            //for (int i = 0; i <= loopString.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter something to add to the array.");
+            //    string userInput = Console.ReadLine();
+            //    Array.Resize(ref loopString, loopString.Length + 1);
+            //    loopString[loopString.Length - 1] = " Hi ";
+            //    Console.WriteLine(loopString[i]);
+            //    loopString[i] = loopString[i] + userInput;
+            //    Console.WriteLine(loopString[i]);
+            //    if (i == 2)
+            //    {
+            //        Console.WriteLine("Goodbye");
+            //        Console.ReadLine();
+            //        Environment.Exit(0);
+            //    }
+            //}
+            //Console.ReadLine();
 
             // Activity 6 - 8
             //List<string> loopStringList = new List<string>();

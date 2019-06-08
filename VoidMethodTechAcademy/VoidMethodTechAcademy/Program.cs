@@ -11,11 +11,7 @@ namespace VoidMethodTechAcademy
         static void Main(string[] args)
         {
             VoidTech voidTech = new VoidTech();
-            voidTech.Int1 = 4;
-            voidTech.Int2 = 2;
-            Console.WriteLine("4 + 2 equals");
-            Console.WriteLine(voidTech.Int1 + voidTech.Int2);
-            Console.WriteLine(voidTech.Int1 + " " + voidTech.Int2);
+            voidTech.Sample(3, 5);
             Console.ReadLine();
         }
     }

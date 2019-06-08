@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace VoidMethodTechAcademy
 {
-    class VoidTech
+   public class VoidTech
     {
-        public void Sample()
+        public void Sample(int num1, int num2)
         {
-            Int1 = 4;
-            Int2 = 2;
+            num1 *= num1;
+            Console.WriteLine("The first value squared: {0}", num1);
+            Console.WriteLine("The second value is: {0}", num2);
         }
-        public int Int1 { get; set; }
-        public int Int2 { get; set; }
     }
 }
