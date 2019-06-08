@@ -8,38 +8,27 @@ namespace OptionalIntegerTechAcademy
 {
     public class Optional
     {
-        public Optional()
+        public int ifYouWant(int num1, string opt1 )
         {
-            Console.WriteLine("Enter an integer:");
-            Opt1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter a second integer, or enter No:");
-            Option = Console.ReadLine();
-            try
+            if (opt1 == "")
             {
-                
-                if (Option == "No")
+                num1 += num1;
+                Console.WriteLine("The first value added to itself is: {0}", num1);
+            }
+            else
+            {
+                try
                 {
-                    Console.WriteLine("The program will now add {0} to 8", Opt1);
-                    int sum1 = Opt1 + 8;
-                    Console.WriteLine("{0} plus 8 equals {1}", Opt1, sum1);
+                    int opt2 = Convert.ToInt32(opt1);
+                    num1 += opt2;
+                    Console.WriteLine("The first value added to the second value is: {0}", num1);
                 }
-                else
+                catch (FormatException)
                 {
-                    Opt2 = Int32.Parse(Option);
-                    Console.WriteLine("The program will now add {0} and {1}", Opt1, Opt2);
-                    int sum2 = Opt1 + Opt2;
-                    Console.WriteLine("{0} plus {1} equals {2}", Opt1, Opt2, sum2);
+                    Console.WriteLine("Please enter an integer, if you choose to have a second number.");
                 }
             }
-            catch (FormatException)
-            {
-                Console.WriteLine("Unable to parse {0}", Option);
-            }
-               
+        return num1;
         }
-        public int Opt1 { get; set; }
-        public string Option { get; set; }
-        public int SetNum { get; set; }
-        public int Opt2 { get; set; }
     }
 }
