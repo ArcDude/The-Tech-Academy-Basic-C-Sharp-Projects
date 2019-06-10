@@ -15,7 +15,11 @@ namespace VoidIntegerTechAcademy
             int quotient = Div / 2;
             Console.WriteLine("{0} divided by 2 equals {1}", Div, quotient);
         }
-
+        public void Division(out int x)
+        {
+            x = 12;
+            Console.WriteLine("This method has an out input that is {0}", x);
+        }
         public int Div { get; set; }
     }
 }

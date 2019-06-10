@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace VoidIntegerTechAcademy
 {
-    class Program
+   static class Program
     {
         static void Main(string[] args)
         {
             VoidDivision voidDivision = new VoidDivision();
             voidDivision.Division();
+            voidDivision.Division(out int x);
             Console.ReadLine();
         }
     }
