@@ -12,6 +12,23 @@ namespace InterfaceTechAcademy
         {
             base.SayName();
         }
+        public void Identifcation()
+        {
+            Id = 100;
+
+            Console.WriteLine("ID: {0}", Id);
+        }
+        public int Id { get; set; }
+        public static Employee operator== (Employee employee, Person person)
+        {
+            employee.Id.Equals(person);
+            return employee;
+        }
+        public static Employee operator!= (Employee employee, Person person)
+        {
+            employee.Id.Equals(person);
+            return employee;
+        }
         public void Quit(Person person)
         {
             throw new NotImplementedException();

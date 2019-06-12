@@ -12,6 +12,7 @@ namespace InterfaceTechAcademy
         {
             Employee employee = new Employee();
             employee.SayName();
+            employee.Identifcation();
             Console.ReadLine();
         }
     }
