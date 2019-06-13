@@ -10,9 +10,9 @@ namespace InterfaceTechAcademy
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.SayName();
-            employee.Identifcation();
+            Employee<Thing> employee = new Employee<Thing>();
+          // employee.SayName();
+            //employee.Identifcation();
             Console.ReadLine();
         }
     }

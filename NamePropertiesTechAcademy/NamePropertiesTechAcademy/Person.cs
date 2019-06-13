@@ -10,11 +10,10 @@ namespace NamePropertiesTechAcademy
     {
         public void SayName()
         {
-            FirstName = "Sample";
-            LastName = "Student";
             Console.WriteLine("Name: {0} {1}", FirstName, LastName);
         }
         public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public  string LastName { get; set; }
+
     }
 }
