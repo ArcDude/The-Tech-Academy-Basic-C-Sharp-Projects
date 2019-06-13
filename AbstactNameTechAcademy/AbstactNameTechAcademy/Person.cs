@@ -9,9 +9,7 @@ namespace AbstactNameTechAcademy
    public abstract class Person
     {
         public virtual void SayName()
-        {
-            FirstName = "Sample";
-            LastName = "Student";
+        { 
             Console.WriteLine("Name: {0} {1}", FirstName, LastName);
         }
         public string FirstName { get; set; }
