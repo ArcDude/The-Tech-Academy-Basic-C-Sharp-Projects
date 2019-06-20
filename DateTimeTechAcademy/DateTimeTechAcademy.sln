@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeTechAcademy", "DateTimeTechAcademy\DateTimeTechAcademy.csproj", "{7209E4CB-5D7B-43F5-B4CF-5249A3D4B2FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7209E4CB-5D7B-43F5-B4CF-5249A3D4B2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7209E4CB-5D7B-43F5-B4CF-5249A3D4B2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7209E4CB-5D7B-43F5-B4CF-5249A3D4B2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7209E4CB-5D7B-43F5-B4CF-5249A3D4B2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE08AC13-B347-455F-B865-5B9006B38737}
+	EndGlobalSection
+EndGlobal
